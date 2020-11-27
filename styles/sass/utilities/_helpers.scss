@@ -1,0 +1,32 @@
+/* Buttons */
+.btn {
+    padding: 11px 24px;
+    font-size: 1.14rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+    transition: background 250ms ease-in,
+                color 250ms ease-in;
+
+    &--black {
+        border: 1px solid $c-violet-very-dark;
+        color: $c-violet-very-dark;
+
+        &:hover {
+            color: #fff;
+            background: $c-violet-very-dark;
+        }
+    }
+
+    &--white {
+        border: 1px solid #fff;
+        color: #fff;
+
+        &:hover {
+            color: $c-violet-very-dark;
+            background: #fff;
+        }
+    }
+}

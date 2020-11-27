@@ -1,7 +1,39 @@
 /* Primary */
 /* Neutral */
+/* Buttons */
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+.btn {
+  padding: 11px 24px;
+  font-size: 1.14rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  transition: background 250ms ease-in, color 250ms ease-in;
+}
+
+.btn--black {
+  border: 1px solid #2b272f;
+  color: #2b272f;
+}
+
+.btn--black:hover {
+  color: #fff;
+  background: #2b272f;
+}
+
+.btn--white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn--white:hover {
+  color: #2b272f;
+  background: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

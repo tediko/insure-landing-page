@@ -16,7 +16,7 @@
 /* Buttons */
 .btn {
   padding: 11px 24px;
-  font-size: 1.14rem;
+  font-size: 0.84rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -26,7 +26,7 @@
 }
 
 .btn--black {
-  border: 1px solid #2b272f;
+  border: 2px solid #2b272f;
   color: #2b272f;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .btn--white {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
 }
 
@@ -167,14 +167,53 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.header__btn {
-  padding: 16px 64px;
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  color: #fff;
+/* Header media queries */
+@media (max-width: 768px) {
+  .header__btn {
+    padding: 16px 64px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 40px;
+  }
+  .header__hamburger-menu {
+    display: none;
+  }
+  .header__nav {
+    position: static;
+    display: flex;
+    width: initial;
+    top: unset;
+    left: unset;
+    padding: 0;
+    height: auto;
+  }
+  .header__nav--active {
+    display: none;
+  }
+  .header__list {
+    flex-flow: row;
+  }
+  .header__item {
+    opacity: 1;
+  }
+  .header__link {
+    color: #837d87;
+    font-size: 0.84rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-right: 28px;
+    letter-spacing: 1px;
+    word-spacing: initial;
+  }
 }
 /*# sourceMappingURL=main.css.map */

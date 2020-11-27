@@ -45,6 +45,12 @@
   background: #fff;
 }
 
+/* Containers */
+.container {
+  max-width: 1105px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;

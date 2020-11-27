@@ -1,0 +1,116 @@
+.header {
+    padding: 0 24px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    &__hamburger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border: 2px solid $c-violet-very-dark;
+        background: transparent;
+        cursor: pointer;
+        
+        &.open {
+            .header__hamburger {
+                transform: translateX(-50px);
+                background: transparent;
+            }
+            .header__hamburger::before {
+                transform: rotate(45deg) translate(35px, -35px);
+            }
+            .header__hamburger::after {
+                transform: rotate(-45deg) translate(35px, 35px);
+            }
+        }
+    }
+
+    &__hamburger {
+        position: relative;
+        width: 18px;
+        height: 2px;
+        background: $c-violet-very-dark;
+        border: none;
+        transition: transform 250ms ease-in-out,
+                    background 250ms ease-in-out;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 2px;
+            background: $c-violet-dark;
+            transition: transform 250ms ease-in-out;
+        }
+
+        &::before {
+            transform: translateY(5px);
+        }
+
+        &::after {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        width: 100vw;
+        top: 80px;
+        left: -24px;
+        padding-top: 50px;
+        height: 0;
+        transition: all 0.5s ease-in;
+        
+        &--active {
+            height: calc(100vh - 80px);
+            background: url(../../assets/img/bg-pattern-mobile-nav.svg), $c-violet-very-dark;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        opacity: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__btn {
+        padding: 16px 64px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+}

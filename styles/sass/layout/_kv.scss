@@ -1,0 +1,41 @@
+.kv {
+    position: relative;
+    background: $c-violet-dark;
+
+    &::before {
+        position: absolute;
+        content: url(../../assets/img/bg-pattern-intro-left-mobile.svg);
+        top: 452px;
+        left: 0;
+    }
+    
+    &::after {
+        position: absolute;
+        content: url(../../assets/img/bg-pattern-intro-right-mobile.svg);
+        bottom: -186px;
+        right: 0;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 451px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 90px 24px;
+        text-align: center;
+    }
+
+    &__text {
+        color: $c-light-gray;
+        line-height: 28px;
+        margin: 24px 0 28px 0;
+        max-width: 533px;
+    }
+}

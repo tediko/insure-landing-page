@@ -89,3 +89,18 @@
         } 
     }
 }
+
+/* Separators */
+.separator {
+    width: 150px;
+    height: 1px;
+    margin-bottom: 64px;
+
+    &--light {
+        background: $c-light-gray;
+    }
+
+    &--dark {
+        background: $c-violet-grayish-dark;
+    }
+}

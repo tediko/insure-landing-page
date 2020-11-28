@@ -85,8 +85,21 @@
         }
     
         &--big {
-            font-size: 3.375rem;
+            font-size: 2.5rem;
         } 
+    }
+
+    @media (min-width: 1000px) {
+        &--big {
+            font-size: 3.375rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &--large {
+            font-size: 4.25rem;
+            line-height: 64px;
+        }
     }
 }
 

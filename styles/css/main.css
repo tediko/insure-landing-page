@@ -140,15 +140,6 @@ h1, h2, h3, h4, h5, h6 {
   left: -24px;
   padding-top: 50px;
   height: 0;
-  transition: all 0.5s ease-in;
-}
-
-.header__nav--active {
-  height: calc(100vh - 80px);
-  background: url(../../assets/img/bg-pattern-mobile-nav.svg), #2b272f;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 }
 
 .header__list {
@@ -185,6 +176,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid #fff;
     color: #fff;
   }
+  .header__nav {
+    transition: all 0.5s ease-in;
+  }
+  .header__nav--active {
+    height: calc(100vh - 80px);
+    background: url(../../assets/img/bg-pattern-mobile-nav.svg), #2b272f;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
 }
 
 @media (min-width: 768px) {
@@ -203,9 +204,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     height: auto;
   }
-  .header__nav--active {
-    display: none;
-  }
   .header__list {
     flex-flow: row;
   }
@@ -220,6 +218,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 28px;
     letter-spacing: 1px;
     word-spacing: initial;
+    transition: color 250ms ease-in;
+  }
+  .header__link:hover {
+    color: #2b272f;
   }
 }
 /*# sourceMappingURL=main.css.map */

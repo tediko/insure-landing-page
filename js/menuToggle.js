@@ -15,7 +15,7 @@ const toggleMenu = () => {
 
         menuItems.forEach((item, idx) => {
             item.style.animation = `nav-anim 500ms ease-in forwards`;
-            item.style.animationDelay = `${idx * 300}ms`;
+            item.style.animationDelay = `${idx * 200}ms`;
         })
     }
 }

@@ -49,16 +49,22 @@
 
 /* Headings */
 .h {
+    font-weight: 400;
+
     &--large {
         font-size: 2.81rem;
+        line-height: 48px;
+        letter-spacing: 1px;
     }
-
+    
     &--big {
         font-size: 2.25rem;
+        letter-spacing: 1px;
     }
 
     &--med {
         font-size: 1.6875rem;
+        line-height: 40px;
     }
 
     &--small {

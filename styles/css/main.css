@@ -64,16 +64,24 @@
 }
 
 /* Headings */
+.h {
+  font-weight: 400;
+}
+
 .h--large {
   font-size: 2.81rem;
+  line-height: 48px;
+  letter-spacing: 1px;
 }
 
 .h--big {
   font-size: 2.25rem;
+  letter-spacing: 1px;
 }
 
 .h--med {
   font-size: 1.6875rem;
+  line-height: 40px;
 }
 
 .h--small {

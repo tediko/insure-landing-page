@@ -427,4 +427,37 @@ h1, h2, h3, h4, h5, h6 {
   color: #837d87;
   text-align: center;
 }
+
+/* About media queries */
+@media (min-width: 768px) {
+  .about__features {
+    flex-flow: row;
+  }
+  .about__card {
+    max-width: 225px;
+  }
+  .about__card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about {
+    padding: 304px 40px 160px 40px;
+  }
+  .about__container {
+    align-items: flex-start;
+  }
+  .about__features {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .about__card {
+    max-width: 353px;
+    align-items: flex-start;
+  }
+  .about__card-text {
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=main.css.map */

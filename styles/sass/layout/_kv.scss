@@ -1,6 +1,7 @@
 .kv {
     position: relative;
     background: $c-violet-dark;
+    z-index: 2;
 
     &::before {
         position: absolute;
@@ -37,5 +38,51 @@
         line-height: 28px;
         margin: 24px 0 28px 0;
         max-width: 533px;
+    }
+}
+
+/* Kv media queries */
+@media (min-width: 768px) {
+    .kv {
+        padding: 0 40px;
+
+        &::before {
+            content: url(../../assets/img/bg-pattern-intro-left-desktop.svg); 
+            top: unset;
+            bottom: -335px;
+        }
+
+        &::after {
+            content: url(../../assets/img/bg-pattern-intro-right-desktop.svg);
+            bottom: unset;
+            top: -83px;
+        }
+
+        &__container {
+            display: flex;
+            height: 600px;
+        }
+        
+        &__image {
+            order: 2;
+            transform: translateY(110px);
+
+            img {
+                width: 100%;
+                height: auto;
+                min-height: 451px;
+            }
+        }
+
+        &__content {
+            align-items: flex-start;
+            justify-content: center;
+            min-width: 470px;
+            max-width: 565px;
+            width: 100%;
+            padding: 0;
+            padding-right: 24px;
+            text-align: left;
+        }
     }
 }

@@ -101,8 +101,36 @@
     font-size: 3.75rem;
   }
   .h--big {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .h--big {
     font-size: 3.375rem;
   }
+}
+
+@media (min-width: 1200px) {
+  .h--large {
+    font-size: 4.25rem;
+    line-height: 64px;
+  }
+}
+
+/* Separators */
+.separator {
+  width: 150px;
+  height: 1px;
+  margin-bottom: 64px;
+}
+
+.separator--light {
+  background: #fafafa;
+}
+
+.separator--dark {
+  background: #837d87;
 }
 
 * {
@@ -283,6 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 .kv {
   position: relative;
   background: #2d2640;
+  z-index: 2;
 }
 
 .kv::before {
@@ -318,5 +347,45 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 28px;
   margin: 24px 0 28px 0;
   max-width: 533px;
+}
+
+/* Kv media queries */
+@media (min-width: 768px) {
+  .kv {
+    padding: 0 40px;
+  }
+  .kv::before {
+    content: url(../../assets/img/bg-pattern-intro-left-desktop.svg);
+    top: unset;
+    bottom: -335px;
+  }
+  .kv::after {
+    content: url(../../assets/img/bg-pattern-intro-right-desktop.svg);
+    bottom: unset;
+    top: -83px;
+  }
+  .kv__container {
+    display: flex;
+    height: 600px;
+  }
+  .kv__image {
+    order: 2;
+    transform: translateY(110px);
+  }
+  .kv__image img {
+    width: 100%;
+    height: auto;
+    min-height: 451px;
+  }
+  .kv__content {
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 470px;
+    max-width: 565px;
+    width: 100%;
+    padding: 0;
+    padding-right: 24px;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */

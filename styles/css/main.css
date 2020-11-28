@@ -153,7 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  position: relative;
   padding: 0 24px;
+  background: #fff;
+  z-index: 5;
 }
 
 .header__container {

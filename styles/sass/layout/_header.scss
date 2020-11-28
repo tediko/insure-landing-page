@@ -1,5 +1,8 @@
 .header {
+    position: relative;
     padding: 0 24px;
+    background: #fff;
+    z-index: 5;
 
     &__container {
         position: relative;

@@ -391,4 +391,40 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 }
+
+.about {
+  padding: 140px 24px;
+}
+
+.about__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about__features {
+  display: flex;
+  flex-flow: column;
+  margin-top: 85px;
+}
+
+.about__card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 420px;
+}
+
+.about__card:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.about__card-heading {
+  margin: 32px 0 20px 0;
+}
+
+.about__card-text {
+  color: #837d87;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

@@ -36,3 +36,12 @@
     max-width: 1105px;
     margin: 0 auto;
 }
+
+/* Helper class */
+.scroll-y {
+    overflow-y: hidden;
+
+    @media (min-width: 768px) {
+        overflow-y: initial;
+    }
+}

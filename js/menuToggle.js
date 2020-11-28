@@ -7,14 +7,12 @@ const toggleMenu = () => {
     if (menuBtn.classList.contains('open')) {
         menuBtn.classList.remove('open');
         menuNav.classList.remove('header__nav--active');
-        body.style.overflowY = 'visible'
         
         menuItems.forEach(item => item.style.animation = ``);
 
     } else {
         menuBtn.classList.add('open');
         menuNav.classList.add('header__nav--active');
-        body.style.overflowY = 'hidden';
 
         menuItems.forEach((item, idx) => {
             item.style.animation = `nav-anim 500ms ease-in forwards`;

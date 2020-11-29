@@ -109,6 +109,7 @@
 @media (min-width: 1000px) {
   .h--big {
     font-size: 3.375rem;
+    line-height: 56px;
   }
 }
 
@@ -501,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-flow: row;
     justify-content: space-between;
     text-align: left;
-    padding: 68px 80px;
+    padding: 52px 80px;
   }
   .work__container::before {
     content: url(../../assets/img/bg-pattern-how-we-work-desktop.svg);

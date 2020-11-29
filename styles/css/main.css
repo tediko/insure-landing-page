@@ -652,13 +652,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer__nav {
     flex-flow: row;
+    justify-content: space-between;
   }
   .footer__nav-list {
     align-items: flex-start;
-  }
-  .footer__nav-card {
-    max-width: 300px;
-    width: 100%;
   }
   .footer__nav-title {
     text-align: left;
@@ -686,8 +683,12 @@ h1, h2, h3, h4, h5, h6 {
   .footer {
     padding: 0 40px;
   }
-  .footer__nav-card:not(:last-child) {
-    margin-right: 100px;
+  .footer__nav {
+    justify-content: flex-start;
+  }
+  .footer__nav-card {
+    max-width: 300px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

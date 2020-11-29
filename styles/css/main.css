@@ -38,7 +38,7 @@
 
 @keyframes kv-slide-right {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {

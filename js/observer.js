@@ -1,4 +1,3 @@
-const aboutSection = document.querySelector('.about');
 const sections = document.querySelectorAll('[data-observer]');
 
 const options = {

@@ -55,3 +55,17 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .work {
+        &__container {
+            opacity: 0;
+        }
+        
+        &.active {
+            .work__container {
+                animation: work-slide-bottom 1000ms ease-in forwards;
+            }
+        }
+    }
+}

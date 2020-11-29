@@ -100,6 +100,32 @@
         letter-spacing: 1px;
         color: $c-violet-dark;
     }
+
+    &__attribution {
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $c-blue-grayish;
+        font-size: 0.8rem;
+        opacity: 0.5;
+        text-align: center;
+        z-index: 5;
+    
+        a {
+            color: $c-violet-grayish-dark;
+            text-decoration: none;
+            transition: color 250ms ease-in;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: $c-violet-dark;
+        }
+    }
 }
 
 /* Footer media queries */

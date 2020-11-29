@@ -135,6 +135,10 @@
   background: #837d87;
 }
 
+.separator--fw {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -11,7 +11,8 @@
         "../sass/layout/_header.scss",
         "../sass/layout/_kv.scss",
         "../sass/layout/_about.scss",
-        "../sass/layout/_work.scss"
+        "../sass/layout/_work.scss",
+        "../sass/layout/_footer.scss"
     ],
     "names": [],
     "file": "main.css"

@@ -491,4 +491,26 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
   z-index: 2;
 }
+
+/* Work media queries */
+@media (min-width: 1000px) {
+  .work {
+    padding: 0 40px;
+  }
+  .work__container {
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 68px 80px;
+  }
+  .work__container::before {
+    content: url(../../assets/img/bg-pattern-how-we-work-desktop.svg);
+  }
+  .work__heading {
+    max-width: 500px;
+  }
+  .work__cta {
+    z-index: 2;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -27,3 +27,30 @@
         z-index: 2;
     }
 }
+
+/* Work media queries */
+@media (min-width: 1000px) {
+    .work {
+        padding: 0 40px;
+        
+        &__container {
+            flex-flow: row;
+            justify-content: space-between;
+            text-align: left;
+            padding: 68px 80px;
+
+            &::before {
+                content: url(../../assets/img/bg-pattern-how-we-work-desktop.svg);
+            }
+
+        }
+
+        &__heading {
+            max-width: 500px;
+        }
+
+        &__cta {
+            z-index: 2;
+        }
+    }
+}

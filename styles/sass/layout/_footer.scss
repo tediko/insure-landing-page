@@ -117,6 +117,15 @@
             justify-content: space-between;
         }
 
+        &__socials-link {
+            transition: color 250ms ease-in;
+
+            &:hover {
+                color: $c-violet-very-dark;
+                animation: shake-hover 500ms ease-in forwards;
+            }
+        }
+
         &__nav {
             flex-flow: row;
         }
@@ -132,6 +141,26 @@
 
         &__nav-title {
             text-align: left;
+        }
+
+        &__nav-link {
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0px;
+                height: 1px;
+                background: $c-violet-very-dark;
+                transition: width 250ms ease-in;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
         }
     }
 }

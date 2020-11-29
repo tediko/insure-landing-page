@@ -631,6 +631,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-flow: row;
     justify-content: space-between;
   }
+  .footer__socials-link {
+    transition: color 250ms ease-in;
+  }
+  .footer__socials-link:hover {
+    color: #2b272f;
+    animation: shake-hover 500ms ease-in forwards;
+  }
   .footer__nav {
     flex-flow: row;
   }
@@ -643,6 +650,23 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer__nav-title {
     text-align: left;
+  }
+  .footer__nav-link {
+    position: relative;
+  }
+  .footer__nav-link::before {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 1px;
+    background: #2b272f;
+    transition: width 250ms ease-in;
+  }
+  .footer__nav-link:hover::before {
+    width: 100%;
   }
 }
 

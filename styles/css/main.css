@@ -456,6 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about__card:not(:last-child) {
     margin-right: 20px;
+    margin-bottom: 0;
   }
 }
 

@@ -1,0 +1,29 @@
+.work {
+    padding: 0 24px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: $c-violet-dark;
+        padding: 68px 24px;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: url(../../assets/img/bg-pattern-how-we-work-mobile.svg);
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    
+    &__heading {
+        max-width: 420px;
+        margin-bottom: 32px;
+        z-index: 2;
+    }
+}

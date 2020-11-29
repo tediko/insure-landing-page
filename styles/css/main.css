@@ -461,4 +461,34 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 }
+
+.work {
+  padding: 0 24px;
+}
+
+.work__container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #2d2640;
+  padding: 68px 24px;
+  overflow: hidden;
+}
+
+.work__container::before {
+  position: absolute;
+  content: url(../../assets/img/bg-pattern-how-we-work-mobile.svg);
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.work__heading {
+  max-width: 420px;
+  margin-bottom: 32px;
+  z-index: 2;
+}
 /*# sourceMappingURL=main.css.map */

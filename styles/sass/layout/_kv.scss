@@ -71,6 +71,7 @@
                 width: 100%;
                 height: auto;
                 min-height: 451px;
+                animation: kv-slide-right 1000ms ease-in forwards;
             }
         }
 
@@ -83,6 +84,7 @@
             padding: 0;
             padding-right: 24px;
             text-align: left;
+            animation: kv-slide-left 1000ms ease-in forwards;
         }
     }
 }

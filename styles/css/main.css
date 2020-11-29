@@ -25,6 +25,28 @@
   }
 }
 
+@keyframes kv-slide-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes kv-slide-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
 /* Buttons */
 .btn {
   padding: 11px 24px;
@@ -397,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     min-height: 451px;
+    animation: kv-slide-right 1000ms ease-in forwards;
   }
   .kv__content {
     align-items: flex-start;
@@ -407,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     padding-right: 24px;
     text-align: left;
+    animation: kv-slide-left 1000ms ease-in forwards;
   }
 }
 

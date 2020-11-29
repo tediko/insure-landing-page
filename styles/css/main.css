@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__features {
   display: flex;
   flex-flow: column;
-  margin-top: 85px;
+  margin-top: 95px;
 }
 
 .about__card {

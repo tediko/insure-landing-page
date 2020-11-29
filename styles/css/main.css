@@ -618,4 +618,40 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   color: #2d2640;
 }
+
+/* Footer media queries */
+@media (min-width: 768px) {
+  .footer::before {
+    content: url("../../assets/img/bg-pattern-footer-desktop.svg");
+  }
+  .footer__container {
+    align-items: stretch;
+  }
+  .footer__top {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .footer__nav {
+    flex-flow: row;
+  }
+  .footer__nav-list {
+    align-items: flex-start;
+  }
+  .footer__nav-card {
+    max-width: 300px;
+    width: 100%;
+  }
+  .footer__nav-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    padding: 0 40px;
+  }
+  .footer__nav-card:not(:last-child) {
+    margin-right: 100px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

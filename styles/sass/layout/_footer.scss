@@ -100,3 +100,50 @@
         color: $c-violet-dark;
     }
 }
+
+/* Footer media queries */
+@media (min-width: 768px) {
+    .footer {
+        &::before {
+            content: url('../../assets/img/bg-pattern-footer-desktop.svg');
+        }
+
+        &__container {
+            align-items: stretch;
+        }
+
+        &__top {
+            flex-flow: row;
+            justify-content: space-between;
+        }
+
+        &__nav {
+            flex-flow: row;
+        }
+
+        &__nav-list {
+            align-items: flex-start;
+        }
+
+        &__nav-card {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        &__nav-title {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer {
+        padding: 0 40px;
+
+        &__nav-card {
+            &:not(:last-child) {
+                margin-right: 100px;
+            }
+        }
+    }
+}
